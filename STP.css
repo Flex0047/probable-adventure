@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--mainFontColor2);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--mainPagecolor);
+}
+
+:root {
+    --mainBackcolor: rgb(32 33 35);
+    --mainPagecolor: rgb(14 14 14);
+    --mainFontColor: rgb(241 204 72);
+    --mainFontColor2: rgb(255 255 255);
+}
+
+header {
+    width: 96.8%;
+}
+
+
+nav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    align-content: center;
+    font-weight: 600;
+    z-index: 1000;
+    position: sticky;
+    background-color: var(--mainBackcolor);
+}
+
+nav img {
+    display: flex;
+    cursor: pointer;
+    margin-left: 5%;
+    width: 55px;
+    align-self: center;
+    background-size: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(80, 80, 214);
+    /* a:visited may use once a time*/
+}
+
+nav ul {
+    display: flex;
+    width: 70%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: end;
+}
+
+nav li,
+form {
+    display: inline;
+    margin: 10px;
+    padding-right: 5px;
+}
+
+main {
+    display: block;
+    width: 100%;
+    height: 500px;
+    background-color: var(--mainBackcolor);
+    margin: auto;
+}
+
+.content {
+    position: relative;
+    color: var(--mainFontColor);
+    padding: 30px;
+    width: 37%;
+    align-content: center;
+    height: 365px;
+    background-color: rgb(51 52 54);
+    top: 2%;
+    left: 2%;
+    box-shadow: 0.01225px 0.01225px 2px 1px rgb(70, 69, 69);
+    background-image: linear-gradient(145deg, rgb(52 53 55) 20%, rgb(32 33 35) 80%);
+}
+
+
+h1,
+p {
+    color: var(--mainFontColor);
+    padding-bottom: 5px;
+    text-align: left;
+    position: absolute;
+    top: 60px;
+    left: 7px;
+}
+
+
+h1 {
+    color: var(--mainFontColor);
+    padding: 10px;
+    top: 60px;
+    left: 7px;
+    font-size: 40px;
+}
+
+p {
+    color: var(--mainFontColor2);
+    padding: 10px;
+    text-align: left;
+    top: 120px;
+    left: 15px;
+    font-size: 25px;
+}
+
+.proj {
+    width: 20px;
+    top: 42%;
+    left: 2%;
+}
+
+
+.state {
+    width: 20px;
+    top: 42%;
+    left: 32%;
+}
+
+.proj,
+.state {
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    position: absolute;
+    font-size: 10px;
+    background-color: rgb(248 215 1);
+    color: var(--mainFontColor2);
+    margin: 20px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.contact {
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    text-align: left;
+    font-size: 25px;
+}
+
+.contact a {
+    padding: 10px;
+    position: relative;
+    top: 30px;
+    left: 15px;
+}
+
+.contact a:hover {
+    transition-duration: 0.5s;
+    margin: 10px;
+}
+
+
+
+.slideshow-container {
+    display: flex;
+    position: relative;
+    width: 700px;
+    margin: auto;
+    height: 431px;
+    left: 515px;
+    top: -15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.mySlides {
+    display: flex;
+}
+
+.mySlides img {
+    width: 98%;
+    height: 450px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.dots {
+    text-align: center;
+    padding: 0px;
+    background: #33333300;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.dot:hover {
+    background-color: #717171;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    margin: 0 5px;
+}
+
+
+.hero {
+    background-color: var(--mainBackcolor);
+    padding: 50px;
+    height: 380px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icons i {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+
+.hero h2 {
+    display: block;
+    margin: 50px auto;
+    padding: 20px;
+    color: var(--mainFontColor);
+    text-align: center;
+}
+
+.box-x {
+    display: flex;
+    text-align: center;
+    flex-flow: column wrap;
+}
+
+.work {
+    display: flex;
+    position: absolute;
+    color: var(--mainFontColor);
+    padding: 30px;
+    width: 27%;
+    height: 200px;
+    justify-content: center;
+    align-content: flex-start;
+    flex-flow: wrap row;
+    background-color: rgb(51 52 54);
+    top: 80%;
+    left: 1%;
+    cursor: pointer;
+    box-shadow: 0.01225px 0.01225px 2px 1px rgb(70, 69, 69);
+    background-image: linear-gradient(145deg, rgb(52 53 55) 20%, rgb(32 33 35) 80%);
+}
+
+.sale {
+    display: flex;
+    position: absolute;
+    color: var(--mainFontColor);
+    padding: 30px;
+    width: 27%;
+    height: 202px;
+    cursor: pointer;
+    justify-content: center;
+    align-content: flex-start;
+    background-color: rgb(51 52 54);
+    top: 80%;
+    left: 34%;
+    box-shadow: 0.01225px 0.01225px 2px 1px rgb(70, 69, 69);
+    background-image: linear-gradient(145deg, rgb(52 53 55) 20%, rgb(32 33 35) 80%);
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+
+}
+
+.bulid {
+    display: flex;
+    position: absolute;
+    color: var(--mainFontColor);
+    padding: 30px;
+    width: 26%;
+    height: 200px;
+    cursor: pointer;
+    justify-content: center;
+    align-content: flex-start;
+    background-color: rgb(51 52 54);
+    top: 80%;
+    left: 67%;
+    box-shadow: 0.01225px 0.01225px 2px 1px rgb(70, 69, 69);
+    background-image: linear-gradient(145deg, rgb(52 53 55) 20%, rgb(32 33 35) 80%);
+}
+
+.work:hover,
+.sale:hover,
+.bulid:hover {
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    top: 79%;
+}
+
+.fa-home-alt:before,
+.fa-home-lg-alt:before,
+.fa-home:before,
+.fa-house:before {
+    justify-content: center;
+    font-size: 53px;
+    content: "\f015";
+    color: rgb(249 210 53);
+}
+
+.fa-dollar-sign:before,
+.fa-dollar:before,
+.fa-usd:before {
+    content: "\24";
+    color: rgb(249 210 53);
+    font-size: 53px;
+}
+
+.fa-building:before {
+    content: "\f1ad";
+    color: rgb(249 210 53);
+    font-size: 53px;
+}
+
+
+.latest-work {
+    position: relative;
+    background-color: var(--mainBackcolor);
+    padding: 50px;
+    height: 300px;
+}
+
+.latest-work h2 {
+    display: block;
+    color: var(--mainFontColor);
+    text-align: center;
+}
+
+.project-cards img {
+    width: 150%;
+    height: 250px;
+    display: block;
+    border: 3px solid rgb(249 210 53);
+    border-radius: 5px;
+}
+
+.project-card1 {
+    width: 25%;
+    height: 100px;
+    position: absolute;
+    right: 300px;
+    top: 90px;
+}
+
+.project-card {
+    width: 25%;
+    height: 100px;
+    position: absolute;
+    left: 155px;
+    top: 90px;
+}
+
+.latest-work span {
+    position: absolute;
+    background-color: rgba(28, 32, 34, 0.767);
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    top: 115%;
+    left: 65%;
+}
+
+
+.about-us {
+    display: flex;
+    text-align: center;
+    height: 350px;
+    justify-content: center;
+    background-color: var(--mainBackcolor);
+}
+
+.about-us h2 {
+    text-align: center;
+    display: block;
+    color: var(--mainBackcolor);
+}
+
+.about-us div {
+    padding: 40px 100px;
+    width: 65%;
+    display: block;
+    text-align: left;
+    height: 210px;
+    font-size: 20px;
+    justify-content: start;
+    border-radius: 10px;
+    background-color: rgb(199 162 55);
+}
+
+
+.projects-and-real-estate {
+    display: flex;
+    height: 200px;
+    background-color: var(--mainBackcolor);
+    margin: 0px;
+    justify-content: space-evenly;
+}
+
+.projects-and-real-estate h2 {
+    color: var(--mainFontColor);
+    padding: 0px 150px;
+}
+
+.projects-and-real-estate h2:hover {
+    color: rgb(80, 80, 214);
+    cursor: pointer;
+}
+
+
+footer {
+    width: 98.4%;
+    position: absolute;
+    bottom: -1041px;
+    height: 20px;
+    color: #bbb;
+    left: 0px;
+    display: block;
+    padding: 10px;
+    background-color: var(--mainBackcolor);
+}
+
+footer div {
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+}
+
+footer a {
+    position: absolute;
+    right: 40px;
+    text-decoration: underline;
+    color: rgb(50, 50, 238);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work,
+    .sale,
+    .bulid {
+        width: 100%;
+        margin-top: 20px;
+        color: rgb(80, 5, 120);
+    }
+}

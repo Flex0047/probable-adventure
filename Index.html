@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Al-Morug Company</title>
+    <link rel="stylesheet" href="STP.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="../STP_Projects/Collection/Logo (2).png" alt="Logo"></div>
+            <ul>
+                <li><a href="../STP_Projects/Collection/Logo (2).png">Home</a></li>
+                <li><a href="flex">Projects</a></li>
+                <li><a href="#">Real Estate</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Login</a></li>
+                <li>
+                    <form action="">
+                        <input list="lang" name="languages" id="lan" placeholder="Choose Your Language">
+                        <datalist id="lang">
+                            <option value="Arabic">
+                            <option value="English">
+                            <option value="Spanish">
+                            <option value="Italy">
+                            <option value="France">
+                            <option value="Latin">
+                        </datalist>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <h1>Al-Morug Company</h1>
+            <p>for real estates and <br>investment in Georgia</p>
+            <div class="proj">Projects</div>
+            <div class="state">Real State</div>
+            <div class="social-media">
+                <div class="contact">
+                    <div>Contact Us :</div>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <section class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="../STP_Projects/Collection/islam.png" alt="Image 1">
+                </div>
+                <div class="mySlides fade">
+                    <img src=".//Collection/shaker.png" alt="Image 2">
+                </div>
+                <div class="mySlides fade">
+                    <img src="../STP_Projects/Collection/A12.png" alt="Image 3">
+                </div>
+                </div>
+
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <script>
+                        let slideIndex = 0;
+                        showSlides();
+
+                        function showSlides() {
+                            let slides = document.getElementsByClassName("mySlides");
+                            let dots = document.getElementsByClassName("dot");
+                            for (let i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) { slideIndex = 1 }
+                            for (let i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                            setTimeout(showSlides, 3000); // Change image every 3 seconds
+                        }
+                    </script>
+            </section>
+        </section>
+
+
+        <!-- Imagess -->
+        <section class="hero">
+            <div class="box-x">
+                <h2>Development investment and real estate</h2>
+                <div class="work">
+                    <i class="fas fa-home"></i>
+                    <p>Our company specializes in real estate development and investment...</p>
+                </div>
+
+                <div class="sale">
+                    <i class="fas fa-dollar-sign"></i>
+                    <p>Investment in real estate can be a wise financial decision...</p>
+                </div>
+
+                <div class="bulid">
+                    <i class="fas fa-building"></i>
+                    <p>We offer a wide range of real estate services to meet our client's needs...</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="latest-work" id="flex">
+            <h2>Our Latest Work</h2>
+            <div class="project-cards">
+                <div class="project-card1">
+                    <img src="../STP_Projects/Collection/Apartments-of-The-Icon-Gardens-New-Cairo-Compound.png"
+                        alt="Project 1">
+                    <span><a href="#">Details</a></span>
+                </div>
+                <div class="project-card">
+                    <img src="./Collection/7-Garden-Wonders_-The-Gardens.jpg" alt="Project 2">
+                    <span><a href="#">Details</a></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <div>
+                <h2>About Us</h2>
+                At Al-Morug, we are committed to providing exceptional real estate services to our clients. Our
+                experienced team has a deep understanding of the local market and can help you navigate every step
+                of the buying or selling process..<br><br><br>
+                We are dedicated to honesty, transparency, and integrity in all
+                our
+                dealings, and we always put our clients' needs first. Whether you are a first-time homebuyer or a
+                seasoned investor, we are here to help you achieve your real estate goals.
+            </div>
+        </section>
+
+        <section class="projects-and-real-estate">
+            <div class="projects">
+                <h2>Our Projects</h2>
+            </div>
+            <div class="real-estate">
+                <h2>Our Real Estate</h2>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>&copy; 2023 Al-Morug All rights reserved.</div>
+        <a href="#">Contact Us </a>
+    </footer>
+</body>
+
+</html>
